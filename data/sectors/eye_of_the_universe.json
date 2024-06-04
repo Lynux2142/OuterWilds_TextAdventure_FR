@@ -1,0 +1,32 @@
+{
+  "Sector Arrival": {
+    "text": "Tu te téléportes dans l'Œil de l'Univers"
+  },
+  "Nodes": {
+    "le vaisseau ancien 2": {
+      "name": "le vaisseau ancien",
+      "position": {
+        "y": 200,
+        "x": 0
+      },
+      "explore": "Le propulseur de distorsion du Vaisseau est officiellement hors service... on dirait bien que c'est la fin du voyage.",
+      "description": "une épave ancienne",
+      "gravity": false
+    },
+    "L'Œil de l'Univers": {
+      "position": {
+        "y": 0,
+        "x": 0
+      },
+      "explore": {"text": "voir l'écran d'événement", "fire event": ["older than the universe"]},
+      "description": "???",
+      "gravity": false
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "L'Œil de l'Univers",
+      "Node 1": "le vaisseau ancien 2"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "Sector Arrival": {
+    "text": "La Sablière Noire est un désert en grande partie dépourvu de caractéristiques, à l'exception de quelques structures anciennes massives.\n\nIl y a quatre tours cylindriques de différentes tailles qui entourent l'équateur.\n\nDeux structures en forme d'antennes géantes dépassent des pôles nord et sud.\n\nUn énorme entonnoir de sable s'étend d'une Sablière à l'autre. Le sable s'écoule de la surface de la Sablière Noire et se déverse dans les canyons et les cavernes de la Sablière Rouge."
+  },
+  "Nodes": {
+    "la grande tour": {
+      "position": {
+        "y": -1,
+        "x": 211
+      },
+      "explore": [
+        {
+          "on turn": 0,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, la Sablière Rouge est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 1,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Âtrebois est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 2,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Cravité est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 3,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Léviathe est directement au-dessus.\n\nSoudain, la tour se remplit de lumière et le monde autour de toi disparaît !",
+          "teleport to": "la petite île",
+          "turn cycle": 4
+        }
+      ],
+      "description": "une très grande tour ancienne"
+    },
+    "la tour tachetée": {
+      "position": {
+        "y": -1,
+        "x": -209
+      },
+      "explore": [
+        {
+          "on turn": 0,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, la Sablière Rouge est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 1,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Âtrebois est directement au-dessus.\n\nSoudain, la tour se remplit de lumière et le monde autour de toi disparaît !",
+          "teleport to": "les mines anciennes",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 2,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Cravité est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 3,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Léviathe est directement au-dessus.",
+          "turn cycle": 4
+        }
+      ],
+      "description": "une tour ancienne parsemée de trous"
+    },
+    "la tour fissurée": {
+      "position": {
+        "y": -194,
+        "x": -2
+      },
+      "explore": [
+        {
+          "on turn": 0,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, la Sablière Rouge est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 1,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Âtrebois est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 2,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Cravité est directement au-dessus.\n\nSoudain, la tour se remplit de lumière et le monde autour de toi disparaît !",
+          "teleport to": "la plateforme glaciaire",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 3,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Léviathe est directement au-dessus.",
+          "turn cycle": 4
+        }
+      ],
+      "description": "une tour ancienne très fracturée"
+    },
+    "le centre de la sablière noire": {
+      "position": {
+        "y": 80,
+        "x": -3
+      },
+      "explore": {
+        "text": "voir l'écran d'événement du centre de la sablière noire",
+        "fire event": ["time loop central"],
+        "reveal paths": [
+          "les tours jumelles"
+        ]
+      },
+      "entry point": false,
+      "description": "une chambre secrète au cœur de la Sablière Noire"
+    },
+    "les tours jumelles": {
+      "position": {
+        "y": 218,
+        "x": -2
+      },
+      "explore": [
+        {
+          "on turn": 0,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, la Sablière Rouge est directement au-dessus.\n\nSoudain, la tour se remplit de lumière et le monde autour de toi disparaît !",
+          "teleport to": "le centre de la sablière noire",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 1,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Âtrebois est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 2,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Cravité est directement au-dessus.",
+          "turn cycle": 4
+        },
+        {
+          "on turn": 3,
+          "text": "Tu montes sur la petite plateforme circulaire au centre de la tour.\nIl n'y a pas de plafond, et tandis que la planète tourne, tu regardes les cieux tourner au-dessus de toi.\n\nÀ ce moment précis, Léviathe est directement au-dessus.",
+          "turn cycle": 4
+        }
+      ],
+      "description": "deux petites tours anciennes reliées par un court passage"
+    },
+    "l'antenne géante": {
+      "position": {
+        "y": -1,
+        "x": -2
+      },
+      "explore": "Une antenne géante dépasse du sable et s'élève au-dessus de toi.\nTu trouves ce qui était autrefois une trappe menant au centre de la planète, mais elle a été scellée.",
+      "entry point": true,
+      "description": "une structure massive en forme d'antenne"
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "la tour tachetée",
+      "Node 1": "les tours jumelles"
+    },
+    {
+      "Node 2": "la tour fissurée",
+      "Node 1": "la tour tachetée"
+    },
+    {
+      "Node 2": "la grande tour",
+      "Node 1": "la tour fissurée"
+    },
+    {
+      "Node 2": "les tours jumelles",
+      "Node 1": "la grande tour"
+    },
+    {
+      "Node 2": "la tour tachetée",
+      "Node 1": "l'antenne géante"
+    },
+    {
+      "Node 2": "la grande tour",
+      "Node 1": "l'antenne géante"
+    },
+    {
+      "Node 2": "les tours jumelles",
+      "one-way": true,
+      "Node 1": "le centre de la sablière noire",
+      "hidden": true
+    }
+  ]
+}

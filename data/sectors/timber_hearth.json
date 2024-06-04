@@ -1,0 +1,75 @@
+{
+  "Sector Arrival": {"text": "La surface d'Âtrebois est couverte de grands cratères boisés, l'un d'eux abritant toute votre espèce."},
+  "Nodes": {
+    "le village": {
+      "explore": "Tu discutes avec tes concitoyens, et ils te souhaitent bonne chance pour votre expédition.",
+      "description": "un petit village rustique niché dans un cratère",
+      "position": {
+        "x": 73,
+        "y": 11
+      },
+      "campfire": true,
+      "entry point": true
+    },
+    "les mines anciennes": {
+      "explore": "Les Nomai exploitaient ce cratère pour ses matières premières. Vu l'ampleur de l'excavation, ils devaient construire quelque chose d'énorme.\n\nIl y a aussi une structure ressemblant à un attrape-rêves près du bord du cratère, et tu remarques de fins grains de sable sur une plateforme circulaire au centre.",
+      "description": "les ruines d'une opération minière Nomai",
+      "position": {
+        "x": -176,
+        "y": 11
+      },
+      "entry point": true
+    },
+    "les grottes": {
+      "explore": {
+        "text": "Tu découvres des recherches Nomai analysant les organismes unicellulaires qu'ils ont trouvés vivant dans cette grotte.\n\nEn regardant dans les profondeurs de la piscine, tu aperçois un tunnel sous-marin !",
+        "reveal paths": ["le village"]
+      },
+      "allow telescope": false,
+      "description": "une grotte rocheuse avec un bassin d'eau profonde",
+      "position": {
+        "x": -54,
+        "y": 30
+      }
+    },
+    "l'observatoire": {
+      "explore": {
+        "fire event": [
+          "learn launch codes",
+          "activate nomai statue"
+        ],
+        "text": "Tu parcours la collection d'artefacts de l'observatoire, rapportés de précédentes expéditions spatiales.\n\nIl y a une grande exposition sur les 'Nomai', une race extraterrestre mystérieuse qui habitait votre système solaire il y a des milliers d'années. On sait très peu de choses à leur sujet, mais de nombreuses ruines sont encore visibles sur diverses planètes.\n\nTu parles au conservateur et reçois les codes de lancement. Ton vaisseau (le TRIANGLE ORANGE) est prêt au décollage !\n\nEn sortant du musée, les yeux d'une statue Nomai commencent à briller. tu vois un flash lumineux, suivi d'une série d'images étranges (dont le soleil devenant supernova).\n\nEh bien... c'était étrange."
+      },
+      "description": "un petit observatoire perché sur un rebord surplombant le village",
+      "position": {
+        "x": 176,
+        "y": -46
+      }
+    },
+    "Roccaille": {
+      "explore": "Tu découvres les ruines d'un observatoire Nomai.\n\nIls essayaient de capter un signal de quelque chose appelé l'Œil de l'Univers, mais aucun signal n'a jamais été trouvé.",
+      "description": "une petite lune avec quelques ruines Nomai",
+      "position": {
+        "x": 301,
+        "y": -179
+      },
+      "entry point": true
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "les grottes",
+      "Node 1": "les mines anciennes"
+    },
+    {
+      "Node 2": "l'observatoire",
+      "Node 1": "le village"
+    },
+    {
+      "Node 2": "le village",
+      "hidden": true,
+      "Node 1": "les grottes",
+      "description": "un passage sous-marin à travers le centre de la planète"
+    }
+  ]
+}

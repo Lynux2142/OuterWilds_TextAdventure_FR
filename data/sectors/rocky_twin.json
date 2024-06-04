@@ -1,0 +1,200 @@
+{
+  "Sector Arrival": {"text": "La Sablière Rouge est traversée par des canyons de roche striée, parsemés de cactus, et abrite suffisamment de dépressions de surface pour laisser entrevoir un réseau de grottes souterraines élaboré.\n\nUn énorme entonnoir de sable s'étend d'une Sablière à l'autre. Le sable semble s'écouler de la surface de la Sablière Noire et se déverser dans les canyons et les cavernes de la Sablière Rouge."},
+  "Nodes": {
+    "le lit du lac asséché": {
+      "explore": {
+        "text": "Tu rencontres un autre Âtrien occupé à scanner le ciel nocturne à travers un télescope. Il te parle de la 'Lune Quantique', un corps céleste qui bouge quand tu ne le regardes pas. Apparemment, les Nomai étaient extrêmement intéressés par lui pour une raison quelconque.\n\nAlors que tu fais griller une guimauve, l'Âtrien vous explique que l'énorme cratère dans lequel vous êtes assis était autrefois un lac rempli d'eau, tout comme les canyons asséchés étaient autrefois des rivières.\n\nL'Âtrien te parle d'une entrée de caverne secrète au fond du lit du lac, et mentionne que les Nomai ont peut-être découvert quelque chose d'étrange là-bas...",
+        "reveal paths": ["la caverne du lit du lac"]
+      },
+      "description": "un lit de lac asséché avec un petit feu de camp",
+      "position": {
+        "x": 10,
+        "y": 204
+      },
+      "campfire": true,
+      "signal": "TRAVELER",
+      "entry point": true
+    },
+    "le canyon sud": {"position": {
+      "x": -184,
+      "y": 98
+    }},
+    "le canon gravitationnel": {
+      "explore": {"text": "Il semble que cette chambre était une sorte de canon que les Nomai utilisaient pour lancer des vaisseaux spatiaux vers d'autres planètes."},
+      "allow telescope": false,
+      "description": "une chambre cylindrique bordée de grands anneaux métalliques",
+      "position": {
+        "x": 173,
+        "y": -61
+      }
+    },
+    "le canyon nord": {"position": {
+      "x": -184,
+      "y": -79
+    }},
+    "la caverne du lit du lac": {
+      "explore": {
+        "discover clue": "QM_2",
+        "text": "Tu découvres les vestiges d'un avant-poste de recherche Nomai, y compris les squelettes des chercheurs décédés. De manière troublante, les squelettes bougent quand vous cessez de les regarder.\n\nCe comportement effrayant est causé par une roche noire étrange au centre de la caverne (selon les chercheurs Nomai, il provient de la 'Lune Errante').\n\nLes chercheurs ont découvert que la roche quantique entraîne les objets à proximité à devenir quantiques également. Cela fonctionne même sur les êtres vivants (à condition qu'il fasse trop sombre pour s'observer soi-même ou son environnement)."
+      },
+      "allow telescope": false,
+      "description": "une caverne sombre sans issue",
+      "position": {
+        "x": 37,
+        "y": 91
+      },
+      "signal": "QUANTUM",
+      "entanglement node": true
+    },
+    "la salle de la carte": {
+      "explore": {
+        "discover clue": "TLD_3",
+        "text": "Tu trouves les schémas d'une gigantesque machine que les Nomai ont construite sur la Sablière Noire. \n\nLa machine était conçue pour exploiter l'énergie d'une supernova. \n\nLe centre de contrôle est situé à l'intérieur d'une cavité creuse au centre de la planète, mais il est complètement fermé à la surface."
+      },
+      "allow telescope": false,
+      "description": "l'étage (souterrain) d'une grande tour cylindrique",
+      "position": {
+        "x": 175,
+        "y": 53
+      }
+    },
+    "la capsule de secours écrassée": {
+      "explore": {
+        "text": "Tu découvres une capsule de secours Nomai écrasée. Selon ses journaux, elle a été lancée de quelque part à l'intérieur de Sombronces.\n\nLes Nomai semblent immédiatement s'être réfugiés sous terre pour échapper à la chaleur intense du Soleil.",
+        "reveal paths": ["la cité souterraine"]
+      },
+      "description": "un cratère avec une capsule de secours Nomai écrasée",
+      "position": {
+        "x": -95,
+        "y": -181
+      },
+      "reveal paths": ["la cité souterraine"],
+      "signal": "BEACON",
+      "entry point": true
+    },
+    "la cité souterraine": {
+      "explore": {"text": "Tu découvres des habitations troglodytiques nichées parmi les stalactites et les stalagmites dans une énorme caverne souterraine.\n\nIl semble que les Nomai aient vécu ici pendant un certain temps."},
+      "allow telescope": false,
+      "description": "une ville souterraine spectaculaire",
+      "position": {
+        "x": -5,
+        "y": -87
+      }
+    },
+    "le refuge secret": {
+      "explore": {"text": "Cet endroit est un tombeau. Des squelettes anciens jonchent le sol. Sur le mur, tu trouves une fresque représentant une comète cauchemardesque dans le ciel au-dessus des Sablières."},
+      "allow telescope": false,
+      "description": "une caverne étroite remplie de squelettes",
+      "position": {
+        "x": 16,
+        "y": 5
+      }
+    },
+    "la petite caverne": {
+      "explore": {"text": "Au début, cette caverne semble banale, mais tu remarques finalement que parfois (si vous détournez le regard et que vous le reportez ensuite), une grande dalle de roche d'aspect artificiel apparaît au centre de la caverne."},
+      "allow telescope": false,
+      "description": "une caverne quelque peu insignifiante",
+      "position": {
+        "x": -101,
+        "y": 68
+      },
+      "signal": "QUANTUM",
+      "entanglement node": true
+    },
+    "le canyon de l'arche": {
+      "explore": {
+        "text": "Tu trouves un ancien site d'observation des étoiles Nomai perché au sommet du canyon.\n\nLes Nomai ont remarqué une certaine lune qui apparaissaient aléatoirement dans un endroit différent chaque fois qu'elle était observée. Ils ont spéculé que cette 'Lune Errante' pourrait être liée à l'Œil de l'Univers et ont résolu de l'atteindre.\n\nAu fond du canyon, tu découvres deux entrées de grottes menant sous terre !",
+        "reveal paths": [
+          "la cité souterraine",
+          "le canon gravitationnel"
+        ]
+      },
+      "description": "un canyon étroit rempli de formations rocheuses en forme d'arche",
+      "position": {
+        "x": 95,
+        "y": -158
+      },
+      "reveal paths": [
+        "la cité souterraine",
+        "le canon gravitationnel"
+      ],
+      "entry point": true
+    },
+    "le site fossile": {
+      "explore": {
+        "discover clue": "D_2",
+        "text": "De l'autre côté de la caverne, tu trouves un énorme fossile de coelacanthe incrusté dans la paroi de la caverne. Sa lumière semble toujours faiblement brillante.\n\nÀ proximité, tu trouves les règles d'un jeu qui ressemble à un jeu pour enfants. Un joueur (le 'coelacanthe') fermait ses yeux et essayait d'attraper les autres joueurs (les 'capsules de secours') alors qu'ils tentaient de passer furtivement devant le coelacanthe et d'atteindre le but."
+      },
+      "allow telescope": false,
+      "description": "une grande caverne avec un énorme fossile incrusté dans le mur",
+      "position": {
+        "x": -101,
+        "y": -45
+      }
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "la caverne du lit du lac",
+      "hidden": true,
+      "Node 1": "le lit du lac asséché",
+      "one-way": true
+    },
+    {
+      "Node 2": "le lit du lac asséché",
+      "Node 1": "la salle de la carte",
+      "one-way": true
+    },
+    {
+      "Node 2": "le refuge secret",
+      "Node 1": "la cité souterraine"
+    },
+    {
+      "Node 2": "le site fossile",
+      "Node 1": "la cité souterraine"
+    },
+    {
+      "Node 2": "la salle de la carte",
+      "Node 1": "le canon gravitationnel"
+    },
+    {
+      "Node 2": "la cité souterraine",
+      "Node 1": "le canon gravitationnel"
+    },
+    {
+      "Node 2": "la cité souterraine",
+      "hidden": true,
+      "Node 1": "la capsule de secours écrassée"
+    },
+    {
+      "Node 2": "la cité souterraine",
+      "hidden": true,
+      "Node 1": "le canyon de l'arche"
+    },
+    {
+      "Node 2": "la capsule de secours écrassée",
+      "Node 1": "le canyon de l'arche"
+    },
+    {
+      "Node 2": "le canon gravitationnel",
+      "hidden": true,
+      "Node 1": "le canyon de l'arche"
+    },
+    {
+      "Node 2": "la capsule de secours écrassée",
+      "Node 1": "le canyon nord"
+    },
+    {
+      "Node 2": "le lit du lac asséché",
+      "Node 1": "le canyon sud"
+    },
+    {
+      "Node 2": "le canyon sud",
+      "Node 1": "le canyon nord"
+    },
+    {
+      "Node 2": "le canyon sud",
+      "Node 1": "la petite caverne"
+    }
+  ]
+}

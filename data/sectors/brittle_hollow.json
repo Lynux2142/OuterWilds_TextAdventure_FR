@@ -1,0 +1,126 @@
+{
+  "Sector Arrival": {"text": "Cravité est à la fois fragile et creuse. La surface est constamment bombardée par sa lune volcanique, et de temps en temps, un morceau de la croûte se détache et tombe dans le trou noir au centre de la planète.\n\nFais attention où tu mets les pieds."},
+  "Nodes": {
+    "l'observatoire ancien": {
+      "explore": {
+        "discover clue": "APL_2",
+        "text": "Tu découvres ce qui ressemble à une analyse des conditions météorologiques sur Léviathe. Selon les résultats, la plupart des tornades sur Léviathe ont des vents ascendants forts, mais certaines tornades tournent dans le sens antihoraire et ont des vents descendants.\n\nTu trouveras des schémas pour un grand lanceur de sonde qui a été construit en orbite autour de Léviathe.\n\nDans un autre coin, tu trouve des archives indiquant que les Nomai ont observé la Lune Quantique en 4 endroits - les Sablières, Cravité, Âtrebois, et Léviathe - notant que parfois elle disparaissait complètement."
+      },
+      "description": "une caverne remplie de technologie ancienne",
+      "position": {
+        "x": 0,
+        "y": 216
+      }
+    },
+    "la plateforme glaciaire": {
+      "explore": "Tu examines la structure en forme d'attrape-rêves et remarque de fins grains de sable sur une plateforme circulaire plate au centre.",
+      "description": "une caverne glacée avec une structure extraterrestre ressemblant à un\nattrape-rêves",
+      "position": {
+        "x": -128,
+        "y": 128
+      }
+    },
+    "le site du crash de la capsule de sauvetage": {
+      "explore": "Tu découvres une capsule de sauvetage ancienne écrasée. Selon ses journaux, elle a été lancée depuis un endroit à l'intérieur de Sombronces.\n\nIl semble que les Nomai aient évacué le site du crash et se soient dirigés vers le pôle Nord.",
+      "description": "un cratère avec une ancienne capsule de sauvetage écrasée",
+      "position": {
+        "x": 192,
+        "y": -16
+      },
+      "signal": "BEACON",
+      "entry point": true
+    },
+    "le cratère boisé": {
+      "explore": "Tu découvres un camp abandonné et des notes appartenant à un compagnon de voyage. Il semble qu'ils soient partis il n'y a pas longtemps pour enquêter sur les ruines anciennes au pôle Nord.\n\nUne autre note mentionne l'existence de ruines plus récentes au sud.",
+      "description": "un cratère rempli d'arbres avec un feu de camp fumant",
+      "position": {
+        "x": -193,
+        "y": -61
+      },
+      "campfire": true,
+      "entry point": true
+    },
+    "la station du trou noir": {
+      "explore": {
+        "discover clue": "TLD_2",
+        "text": "Tu trouves une station de recherche Nomai analysant le trou noir au centre de la planète. Les Nomai ont utilisé cette station pour développer une nouvelle méthode de téléportation impliquant deux composants : une tour émettrice et une plateforme réceptrice. Ces téléporteurs ne s'activent que lorsque l'émetteur est dirigé vers son récepteur correspondant.\n\nLes Nomai ont construit un réseau de ces téléporteurs sur la Sablière Noire (un pour chaque planète) pour faciliter la construction d'une machine géante sur la Sablière Noire."
+      },
+      "description": "une ancienne station de recherche suspendue de manière précaire au-dessus\ndu trou noir",
+      "position": {
+        "x": 1,
+        "y": 66
+      }
+    },
+    "la tour ancienne": {
+      "explore": [
+        {
+          "discover clue": "QM_3",
+          "text": "Tu découvres des archives anciennes sur la Lune Quantique. La Lune Quantique visite parfois un 5ème endroit en dehors du système solaire. Les Nomai ont découvert un moyen de voyager sur la Lune Quantique jusqu'à cet endroit, où ils ont été témoins de la Source du Signal."
+        },
+        {"text": "Tu essayes d'entrer dans la tour par sa base, mais la rampe d'entrée a depuis longtemps disparu et l'attraction gravitationnelle est trop forte..."}
+      ],
+      "description": "une tour ancienne émergeant de la croûte de la planète",
+      "position": {
+        "x": 153,
+        "y": 133
+      },
+      "signal": "QUANTUM",
+      "entry point": true
+    },
+    "les habitations sur la falaise": {
+      "explore": {
+        "discover clue": "D_1",
+        "text": "Tu découvres une fresque ancienne avec 5 panneaux.\n\nLe panneau 1 montre un vaisseau Nomai interstellaire recevant un signal de l'Œil de l'Univers (représenté à côté de votre système solaire).\n\nLe panneau 2 montre le vaisseau piégé dans Sombronces.\n\nLe panneau 3 montre 3 capsules de sauvetage lancées depuis le vaisseau.\n\nLe panneau 4 montre une capsule de sauvetage poursuivie par un gigantesque coelacanthe.\n\nLe panneau 5 montre une capsule de sauvetage écrasée sur Cravité, une écrasée sur les Sablières, et une écrasée dans Sombronces."
+      },
+      "description": "des habitations anciennes perchées sur le flanc d'une falaise",
+      "position": {
+        "x": -1,
+        "y": -96
+      }
+    },
+    "le camp de l'archéologue": {
+      "explore": {"text": "Tu trouves un compagnon de voyage jouant du banjo près d'un feu de camp.\n\nIl te parle d'une fresque dans les ruines plus au sud qui décrit le voyage des Nomai vers votre système solaire.\n\nApparemment, ils sont venus ici à la recherche de quelque chose..."},
+      "description": "une clairière boisée avec un feu de camp brûlant",
+      "position": {
+        "x": -1,
+        "y": -205
+      },
+      "campfire": true,
+      "signal": "TRAVELER"
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "la plateforme glaciaire",
+      "Node 1": "le cratère boisé"
+    },
+    {
+      "Node 2": "l'observatoire ancien",
+      "Node 1": "la plateforme glaciaire"
+    },
+    {
+      "Node 2": "la station du trou noir",
+      "Node 1": "la plateforme glaciaire"
+    },
+    {
+      "Node 2": "le camp de l'archéologue",
+      "Node 1": "le cratère boisé"
+    },
+    {
+      "Node 2": "le camp de l'archéologue",
+      "Node 1": "le site du crash de la capsule de sauvetage"
+    },
+    {
+      "Node 2": "la tour ancienne",
+      "Node 1": "le site du crash de la capsule de sauvetage"
+    },
+    {
+      "Node 2": "la plateforme glaciaire",
+      "Node 1": "la tour ancienne"
+    },
+    {
+      "Node 2": "les habitations sur la falaise",
+      "Node 1": "le camp de l'archéologue"
+    }
+  ]
+}

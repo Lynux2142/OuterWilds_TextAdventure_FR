@@ -1,0 +1,137 @@
+{
+  "Sector Arrival": {
+    "text": "Sombronces est une masse tordue de ronces épineuses enveloppées de brouillard. Des fragments de glace et de roche flottent autour de son périmètre, restes de la planète hôte qu'il a dépassée il y a longtemps. Maintenant que le soleil devient plus grand et plus chaud, Sombronces reprend vie après une longue période de dormance.\n\nPeu osent s'aventurer dans les profondeurs obscures de Sombronces, et encore moins (spécifiquement aucun) ne reviennent jamais.\n\nFais demi-tour, tu as tellement de choses à vivre."
+  },
+  "Nodes": {
+    "la capsule de secours écrasée": {
+      "position": {
+        "y": 72,
+        "x": -125
+      },
+      "explore": {
+        "text": "Tu trouveras les restes à peine reconnaissables d'une capsule de secours Nomai enchevêtrée dans une toile de ronces. Tu trouves également une grotte dans un astéroïde voisin où les Nomai restants se sont réfugiés après le crash.\n\nLes survivants ont découvert que Sombronces est en réalité une plante carnivore interdimensionnelle géante, et ont émis l'hypothèse que s'ils pouvaient introduire un dispositif de suivi à l'intérieur d'une des ronces, ils pourraient suivre celle-ci jusqu'aux racines de Sombronces (là où le Vaisseau s'est écrasé).",
+        "discover clue": "D_3"
+      },
+      "entry point": true,
+      "description": "une capsule de secours ancienne écrasée",
+      "fog light": true,
+      "signal": "BEACON",
+      "probe description": "une lueur qui perce le brouillard",
+      "gravity": false
+    },
+    "Coelacanthes": {
+      "position": {
+        "y": -37,
+        "x": 343
+      },
+      "anglerfish": true
+    },
+    "Coelacanthes7": {
+      "position": {
+        "y": -162,
+        "x": 5
+      },
+      "anglerfish": true
+    },
+    "Périphérie de Sombronces": {
+      "position": {
+        "y": 4,
+        "x": -335
+      },
+      "explore": {
+        "text": " ",
+        "fire event": ["explore bramble outskirts"]
+      },
+      "entry point": true,
+      "description": "un groupe de ronces fleuries",
+      "ship access": true,
+      "gravity": false
+    },
+    "la méduse gelée": {
+      "position": {
+        "y": 143,
+        "x": 108
+      },
+      "explore": {
+        "text": "Tu trouves une énorme méduse gelée dans un morceau de glace flottant. Elle ne semble pas chargée d'électricité, alors tu t'approches pour enquêter.\n\nTu examines le spécimen et découvres une cavité corporelle creuse juste assez grande pour contenir une personne. Est-ce cela dont parlait l'Âtrien?",
+        "discover clue": "APL_3"
+      },
+      "description": "une méduse gelée",
+      "ship access": true,
+      "probe description": "une méduse enfermée dans un énorme bloc de glace",
+      "gravity": false
+    },
+    "Coelacanthes2": {
+      "position": {
+        "y": 132,
+        "x": 269
+      },
+      "anglerfish": true
+    },
+    "Coelacanthes4": {
+      "position": {
+        "y": 178,
+        "x": 27
+      },
+      "anglerfish": true
+    },
+    "Coelacanthes3": {
+      "position": {
+        "y": -72,
+        "x": -144
+      },
+      "anglerfish": true
+    },
+    "Coelacanthes6": {
+      "position": {
+        "y": 22,
+        "x": 188
+      },
+      "anglerfish": true
+    },
+    "le vaisseau ancien": {
+      "position": {
+        "y": 47,
+        "x": -24
+      },
+      "explore": {
+        "text": " ",
+        "fire event": ["explore ancient vessel"]
+      },
+      "entry point": false,
+      "description": "une épave ancienne",
+      "ship access": true,
+      "gravity": false
+    },
+    "Coelacanthes5": {
+      "position": {
+        "y": -143,
+        "x": 184
+      },
+      "anglerfish": true
+    },
+    "le squelette de coelacanthe": {
+      "position": {
+        "y": -44,
+        "x": 51
+      },
+      "explore": {
+        "text": "Tu rencontres un Âtrien grisonnant vivant à l'intérieur du squelette d'un coelacanthes mort (son leurre brille toujours... peut-être que cela éloigne les autres coelacanthes).\n\nMême s'il est bloqué ici depuis un certain temps, il ne semble pas très pressé de retourner à la civilisation.\n\nEn échange de ne révéler à personne sa position, il te parle d'un endroit proche qui détient un secret pour atteindre le centre de Léviathe.",
+        "reveal paths": ["la méduse gelée"]
+      },
+      "entry point": true,
+      "description": "le squelette d'un coelacanthe",
+      "fog light": true,
+      "signal": "TRAVELER",
+      "probe description": "une lueur qui perce le brouillard",
+      "gravity": false
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "la méduse gelée",
+      "Node 1": "le squelette de coelacanthe",
+      "hidden": true
+    }
+  ]
+}

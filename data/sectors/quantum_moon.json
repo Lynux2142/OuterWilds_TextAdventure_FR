@@ -1,0 +1,142 @@
+{
+  "Sector Arrival": {"text": "Bienvenue sur la Lune Quantique"},
+  "Nodes": {
+    "le désert quantique": {
+      "position": {
+        "y": -36,
+        "x": -2
+      },
+      "quantum location": 0,
+      "explore": "La surface de la lune est couverte de sable et peuplée de cactus qui changent d'endroit lorsque vous ne les regardez pas.",
+      "entry point": true,
+      "description": "un désert quantique"
+    },
+    "la forêt quantique": {
+      "position": {
+        "y": -36,
+        "x": -2
+      },
+      "quantum location": 1,
+      "explore": "Tu te trouves dans une forêt d'arbres qui changent d'endroit lorsque tu ne les regardes pas. Étrangement, tu aperçois également une lampe et un poteau indicateur de ton village. Que font-ils ici ?",
+      "entry point": true,
+      "description": "une forêt quantique"
+    },
+    "le glacier quantique": {
+      "position": {
+        "y": -36,
+        "x": -2
+      },
+      "quantum location": 2,
+      "explore": "La surface de la lune est recouverte de glace. Quelques arbres rabougris (et quelques lampes anciennes) changent d'endroit lorsque tu ne les regardes pas.",
+      "entry point": true,
+      "description": "un glacier quantique"
+    },
+    "le marais quantique": {
+      "position": {
+        "y": -36,
+        "x": -2
+      },
+      "quantum location": 3,
+      "explore": "La surface de la lune est recouverte d'eau. Les petites méduses éthérées flottant au-dessus changent d'endroit lorsque tu ne les regardes pas.",
+      "entry point": true,
+      "description": "des marais quantiques"
+    },
+    "les plaines quantiques": {
+      "position": {
+        "y": -36,
+        "x": -2
+      },
+      "quantum location": 4,
+      "explore": 
+      {
+        "text" : "Tu marches sur une étendue plate parsemée de tas de roches quantiques qui bougent lorsque tu ne les regardes pas. À ta grande surprise, un Nomai vivant se tient devant toi.\n\nLe Nomai te dit que la Lune Quantique est en réalité un morceau de ce que représente réellement le Signal. Il fait un geste vers le ciel, et tu regardes pour voir un nuage d'énergie étrange et lointain entouré de centaines de lunes quantiques.\n\nLe Nomai ne sait pas ce que c'est, sauf que cela semble être la cause première de tous les phénomènes quantiques. Si c'est vrai, qu'y a-t-il à l'intérieur du nuage, et que se passerait-il s'il était observé par une entité consciente ?"
+      },
+      "entry point": true,
+      "description": "une figure solitaire se tenant dans un champ de roches quantiques"
+    },
+    "la tour quantique": {
+      "position": {
+        "y": 90,
+        "x": -4
+      },
+      "quantum location": 0,
+      "entanglement node": true,
+      "explore": 
+      {
+        "text" : "Tu fixes ton regard sur l'ancienne tour (pour qu'elle ne change pas d'endroit lorsque vous vous en approchez) et entres à l'intérieur. Il ne semble y avoir rien d'intéressant, bien qu'il fasse extrêmement sombre ici."
+      },
+      "description": "une tour ancienne"
+    },
+    "la cabane quantique": {
+      "position": {
+        "y": 90,
+        "x": -4
+      },
+      "quantum location": 1,
+      "entanglement node": true,
+      "explore": 
+      {
+        "text" : "Tu fixes ton regard sur la cabane en rondins (pour qu'elle ne change pas d'endroit lorsque vous vous en approchez) et entres à l'intérieur. Il ne semble y avoir rien d'intéressant, bien qu'il fasse extrêmement sombre ici."
+      },
+      "description": "une cabane de votre village"
+    },
+    "l'habitation rupestre quantique": {
+      "position": {
+        "y": 90,
+        "x": -4
+      },
+      "quantum location": 2,
+      "entanglement node": true,
+      "explore": 
+      {
+        "text" : "Tu fixes ton regard sur l'habitation rupestre ancienne (pour qu'elle ne change pas d'endroit lorsque vous vous en approchez) et entres à l'intérieur. Il ne semble y avoir rien d'intéressant, bien qu'il fasse extrêmement sombre ici."
+      },
+      "description": "une habitation rupestre ancienne"
+    },
+    "la station de recherche quantique": {
+      "position": {
+        "y": 90,
+        "x": -4
+      },
+      "quantum location": 3,
+      "entanglement node": true,
+      "explore": 
+      {
+        "text" : "Tu fixes ton regard sur la station de recherche ancienne (pour qu'elle ne change pas d'endroit lorsque vous vous en approchez) et entres à l'intérieur. Il ne semble y avoir rien d'intéressant, bien qu'il fasse extrêmement sombre ici."
+      },
+      "description": "une station de recherche ancienne"
+    },
+    "le sanctuaire quantique": {
+      "position": {
+        "y": 90,
+        "x": -4
+      },
+      "quantum location": 4,
+      "entanglement node": true,
+      "signal": "QUANTUM",
+      "explore": 
+      {
+        "text" : "Les Nomai semblent avoir construit une sorte de sanctuaire en l'honneur du Signal. Il fait noir comme dans un four à l'intérieur."
+      },
+      "description": "un sanctuaire ancien"
+    }
+  },
+  "Connections": [{
+    "Node 2": "la tour quantique",
+    "Node 1": "le désert quantique"
+  },{
+    "Node 2": "la cabane quantique",
+    "Node 1": "la forêt quantique"
+  },{
+    "Node 2": "l'habitation rupestre quantique",
+    "Node 1": "le glacier quantique"
+  },{
+    "Node 2": "la station de recherche quantique",
+    "Node 1": "le marais quantique"
+    },
+    {
+      "Node 2": "le sanctuaire quantique",
+      "Node 1": "les plaines quantiques"
+    }
+  ]
+}

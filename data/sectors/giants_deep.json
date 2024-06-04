@@ -1,0 +1,153 @@
+{
+  "Sector Arrival": {
+    "text": "Léviathe est un monde turbulent, abritant de gigantesques tornades et un immense océan sphérique.\n\nLes petites îles qui parsèment la surface de l'océan sont souvent soulevées dans l'atmosphère par des tornades de passage, les faisant retomber dans l'océan avec une éclaboussure énorme.\n\nEn approchant de la planète, tu remarques une petite station spatiale Nomai en orbite basse."
+  },
+  "Nodes": {
+    "les abysses": {
+      "position": {
+        "y": 91,
+        "x": -2
+      },
+      "explore": [{
+        "text": "Tu explores les profondeurs encrées et découvrez la 'Chambre Écho' qui s'est détachée du lance-sondes Nomai.\n\nÀ l'intérieur, tu découvres ce qui semble être une immense archive de données. En fouillant, tu réalises peu à peu que ces archives de données étaient conçues pour préserver les informations à travers les interruptions du flux temporel lui-même.\n\nAu centre de la chambre, un projecteur affiche les trajectoires cumulatives de centaines de millions de sondes qui ont été lancées hors du système solaire dans toutes les directions possibles. Il semble qu'une d'entre elles ait réussi à localiser l'Œil de l'Univers ! Tu prends soin de noter les coordonnées...",
+        "fire event": ["learn signal coordinates"]
+      }],
+      "entry point": false,
+      "description": "les profondeurs encrées de l'océan",
+      "ship access": false,
+      "probe description": "une barrière d'énergie crépitante entourant la partie la plus profonde de l'océan",
+      "gravity": false
+    },
+    "l'île quantique": {
+      "position": {
+        "y": -154,
+        "x": 124
+      },
+      "explore": {
+        "text": "Tu trouves un grand tas d'étranges roches noires qui bougent lorsque tu ne les observes pas !\n\nLes Nomai ont théorisé que ces roches provenaient de la Lune Quantique qui apparaît parfois en orbite autour de Léviathe. Ils ont également découvert, de manière étrange, que l'observation d'une image des roches avait le même effet que d'observer directement les roches.",
+        "discover clue": "QM_1"
+      },
+      "entry point": true,
+      "description": "une petite île avec un tas de roches noires d'un autre monde",
+      "signal": "QUANTUM"
+    },
+    "l'île du zen": {
+      "position": {
+        "y": 57,
+        "x": -195
+      },
+      "explore": "Tu rencontres un autre Âtrien, qui te raconte que quelque chose est tombé du ciel et a coulé dans l'océan il n'y a pas si longtemps.\n\nIl te dit également qu'un des autres Âtriens a fait plusieurs tentatives pour atteindre le fond de l'océan. Malheureusement, ce même Âtrien est parti en mission vers Sombronces il y a plusieurs années et n'a plus donné signe de vie depuis...",
+      "entry point": true,
+      "description": "une petite île boisée",
+      "signal": "TRAVELER",
+      "probe description": "une île avec un panache de fumée de feu de camp s'élevant dans le ciel",
+      "campfire": true
+    },
+    "la station spatiale Nomai": {
+      "position": {
+        "y": -127,
+        "x": -352
+      },
+      "explore": {
+        "text": "Tu découvres une station spatiale Nomai (fortement endommagée) en orbite basse autour de Léviathe. Une inspection plus approfondie révèle qu'il s'agit en fait d'un lanceur de sonde, bien que la sonde semble déjà avoir été lancée.\n\nUn terminal informatique à proximité indique que la station a été endommagée lors du lancement de la sonde, et qu'un module appelé la 'Chambre Écho' s'est détaché complètement et est tombé dans Léviathe.",
+        "discover clue": "APL_1"
+      },
+      "entry point": true,
+      "description": "une ancienne station spatiale en orbite basse autour de Léviathe",
+      "gravity": false
+    },
+    "le milieu de l'océan": {
+      "position": {
+        "y": -61,
+        "x": -3
+      },
+      "explore": [
+        {"text": "Tu plonges sous l'eau et admires de gigantesques méduses électriques qui passent devant ton hublot."},
+        {
+          "text": "Tu abandonnes ton vaisseau et nages à l'intérieur d'une méduse qui passe.\n\nElle dérive vers le bas dans l'abysses, t'emmenant pour le voyage.",
+          "move to": "les abysses",
+          "require clue": "APL_3"
+        }
+      ],
+      "entry point": false,
+      "description": "la zone médiane de l'océan, où vivent de gigantesques méduses",
+      "ship access": true,
+      "probe description": "des méduses géantes dérivant vers le haut et vers le bas à travers\nles profondeurs de l'océan",
+      "gravity": false
+    },
+    "la petite île": {
+      "position": {
+        "y": 136,
+        "x": 148
+      },
+      "explore": "Tu explores la structure étrange en forme d'attrape-rêves et remarques de fines particules de sable sur une plateforme circulaire plate au centre.",
+      "description": "une petite île avec une structure extraterrestre qui ressemble à un\nattrape-rêves"
+    },
+    "l'île de l'antenne": {
+      "position": {
+        "y": 45,
+        "x": 195
+      },
+      "explore": {
+        "text": "Une étrange antenne dépasse du centre de cette île et s'élève vers le ciel.\n\nTu trouves un passage menant à l'intérieur de l'île où tu découvres un étrange appareil ancien.\n\nUn pot en argile repose sur un piédestal au centre d'un champ d'énergie. Le pot commence à glisser du piédestal et se brise sur le sol. Il y a un flash lumineux et tu regardes les morceaux cassés se réassembler sur le piédestal ! Le pot tombe à nouveau par terre et le cycle continue...\n\nLes enregistrements Nomai que tu trouves sont assez cryptiques, mais il semble qu'ils voulaient construire une version beaucoup plus grande de ce dispositif... à condition de pouvoir générer la quantité massive d'énergie nécessaire pour le faire fonctionner.",
+        "discover clue": "TLD_1"
+      },
+      "entry point": true,
+      "description": "une petite île avec une étrange antenne s'élevant vers le ciel"
+    },
+    "la cellule orageuse": {
+      "position": {
+        "y": -148,
+        "x": -130
+      },
+      "explore": [
+        {"text": "Tu vole dans une cellule orageuse turbulente où des tornades massives parcourent la surface de l'océan.\n\nTu voles accidentellement dans l'une d'entre elles et es brièvement propulsé dans la haute atmosphère par le puissant vortex de la tornade.\n\nTu retombes à la surface, où tu découvres une petite station de recherche Nomai. Il semble que les chercheurs surveillaient les tornades et rapportaient leurs résultats à l'observatoire sur Cravité."},
+        {
+          "text": "Tu identifies une tornade qui tourne dans le sens antihoraire et vole à l'intérieur.\n\nTon vaisseau est violemment propulsé profondément sous l'eau par le fort vortex descendant !",
+          "require clue": "APL_2",
+          "move to": "le milieu de l'océan"
+        }
+      ],
+      "entry point": true,
+      "description": "une cellule orageuse violente pleine de tornades",
+      "ship access": true,
+      "gravity": false
+    }
+  },
+  "Connections": [
+    {
+      "Node 2": "l'île de l'antenne",
+      "Node 1": "la petite île"
+    },
+    {
+      "fail event": "dive attempt",
+      "Node 2": "l'île du zen",
+      "one-way": "true",
+      "Node 1": "le milieu de l'océan"
+    },
+    {
+      "fail event": "dive attempt",
+      "Node 2": "l'île quantique",
+      "one-way": "true",
+      "Node 1": "le milieu de l'océan"
+    },
+    {
+      "fail event": "dive attempt",
+      "Node 2": "l'île de l'antenne",
+      "one-way": "true",
+      "Node 1": "le milieu de l'océan"
+    },
+    {
+      "fail event": "dive attempt",
+      "Node 2": "la cellule orageuse",
+      "one-way": "true",
+      "Node 1": "le milieu de l'océan"
+    },
+    {
+      "fail event": "barrier attempt",
+      "Node 2": "le milieu de l'océan",
+      "one-way": "true",
+      "Node 1": "les abysses"
+    }
+  ]
+}

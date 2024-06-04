@@ -1,0 +1,26 @@
+{
+  "Sector Arrival": {"text": "Bienvenue sur l'Intrus"},
+  "Nodes": {
+    "le champ de glace": {
+      "explore": {"text": "Tu découvres les restes d'un petit vaisseau spatial Nomai sur la surface glacée de la comète. Ses archives indiquent qu'il a été lancé depuis la Sablières Rouge pour une mission urgente."},
+      "description": "une surface glacée et stérile",
+      "position": {
+        "x": 67,
+        "y": 92
+      },
+      "entry point": true
+    },
+    "la carverne de glace": {
+      "explore": {"text": "Tu explores la caverne à l'intérieur du noyau de la comète et découvres un étrange matériau lumineux congelé dans la glace. Des squelettes de Nomai sont partout... probablement l'équipage malheureux du vaisseau spatial à la surface."},
+      "description": "une petite caverne glacée",
+      "position": {
+        "x": -2,
+        "y": -1
+      }
+    }
+  },
+  "Connections": [{
+    "Node 2": "la carverne de glace",
+    "Node 1": "le champ de glace"
+  }]
+}
